@@ -30,3 +30,8 @@
 /config/master.key
 
 public/uploads
+
+# .gitignore
+
+# Ignore environment variables
+.env
