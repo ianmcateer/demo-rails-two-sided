@@ -4,7 +4,11 @@ class ListingsController < ApplicationController
   before_action :check_user, only: [:edit, :update, :destroy]
 
   def seller
-    @listings = Listing.where(user: current_user).order("created_at DESC")
+    if current_user.has_role? :admin
+      @listings = Listing.all
+    else
+      @listings = Listing.where(user: current_user).order("created_at DESC")
+    end
   end
 
   # GET /listings
@@ -33,7 +37,7 @@ class ListingsController < ApplicationController
     @listing = Listing.new(listing_params)
     @listing.user_id = current_user.id
 
-  
+
 
     respond_to do |format|
       if @listing.save
