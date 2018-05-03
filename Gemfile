@@ -19,6 +19,8 @@ gem 'carrierwave', '~> 1.2', '>= 1.2.2'
 gem 'cloudinary', '~> 1.9', '>= 1.9.1'
 gem 'devise'
 gem 'rails-erd', group: :development
+gem 'rolify'
+gem 'cancancan'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
