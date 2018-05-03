@@ -10,9 +10,14 @@
 users = User.create([
   { name: 'ianmcateer',
     email: 'ian@ss',
-    password: '1234567'
+    password: '1234567',
   },
+  {name: 'janedoe',
+    email: 'jane@ss',
+    password: '1234567',
+  }
 ])
+
 listings = Listing.create([
   { name: "Fender American Standard Stratocaster Electric Guitar",
     description: "2006 Fender USA Stratocaster featuring slim maple neck with rosewood fingerboard, 3 tone sunburst alder body,
