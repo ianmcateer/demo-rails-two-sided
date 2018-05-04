@@ -6,17 +6,24 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Role.create name: :admin
 
-users = User.create([
-  { name: 'ianmcateer',
-    email: 'ian@ss',
-    password: '1234567',
-  },
-  {name: 'janedoe',
-    email: 'jane@ss',
-    password: '1234567',
-  }
-])
+user = User.new
+user.email = 'admin@admin.com'
+user.password = '1234567'
+user.name = 'ian mcateer'
+user.add_role :admin
+user.id = 1
+user.save!
+
+user = User.new
+user.email = 'jeffbeck@test.com'
+user.password = '1234567'
+user.name = 'jeff beck'
+user.add_role :admin
+user.id = 2
+user.save!
+
 
 listings = Listing.create([
   { name: "Fender American Standard Stratocaster Electric Guitar",
@@ -25,6 +32,6 @@ listings = Listing.create([
        Found Sound Australia Pty Ltd. 155 Elgin Street (Via Markov Place) Carlton, VIC 3053 Australia",
     price:1748,
     image: Rails.root.join('app', 'assets', 'images', 'fender.png').open,
-    user_id: 10,
+    user_id: 2,
   }
   ])
