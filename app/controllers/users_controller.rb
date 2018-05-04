@@ -42,7 +42,7 @@ class UsersController < ApplicationController
   end
 
   def check_admin
-    unless current_user.has_role? :admin
+    unless current_user.has_role? :admin 
       redirect_to root_url, alert: "Not permitted"
     end
   end
