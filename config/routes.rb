@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'pages/contact'
 
   get 'seller' => 'listings#seller'
-  get 'user' => 'listings#user'
+  get 'users' => 'users#index'
 
 
   get 'sales' => 'orders#sales'

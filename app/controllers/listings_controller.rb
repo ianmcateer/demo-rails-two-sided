@@ -11,10 +11,6 @@ class ListingsController < ApplicationController
     end
   end
 
-  def user
-    @users= User.all
-  end
-
   # GET /listings
   # GET /listings.json
   def index
