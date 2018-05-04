@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'pages/contact'
 
   get 'seller' => 'listings#seller'
-  get 'users' => 'users#index'
+  resources :users, except: [:new, :create]
 
 
   get 'sales' => 'orders#sales'
