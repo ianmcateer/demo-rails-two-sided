@@ -26,7 +26,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><%= link_to "Manage All Listings", seller_path %></li>
-            <li><%= link_to "Manage All Users", seller_path %></li>
+            <li><%= link_to "Manage All Users",{:controller => 'listings', :action => 'user'}%></li>
           </ul>
         </li>
         <% end %>

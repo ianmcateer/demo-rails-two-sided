@@ -11,6 +11,10 @@ class ListingsController < ApplicationController
     end
   end
 
+  def user
+    @users= User.all
+  end
+
   # GET /listings
   # GET /listings.json
   def index
@@ -86,7 +90,7 @@ class ListingsController < ApplicationController
     end
 
     def check_user
-      if current_user != @listing.user
+      unless current_user == @listing.user or current_user.has_role? :admin
         redirect_to root_url, alert: "Sorry, this listing belongs to someone else"
       end
     end

@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'pages/contact'
 
   get 'seller' => 'listings#seller'
+  get 'user' => 'listings#user'
+
 
   get 'sales' => 'orders#sales'
   get 'purchases' => 'orders#purchases'

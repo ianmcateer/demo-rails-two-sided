@@ -10,4 +10,10 @@ class User < ApplicationRecord
   has_many :listings, dependent: :destroy
   has_many :sales, class_name: "Order", foreign_key: "seller_id"
   has_many :purchases, class_name: "Order", foreign_key: "buyer_id"
+
+  after_create :add_a_role
+
+  def add_a_role
+    add_role :author
+  end
 end
