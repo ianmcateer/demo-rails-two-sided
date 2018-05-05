@@ -4,7 +4,7 @@
 body {
   background-color: #ffffff;
   color: #333333;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Lato, Helvetica, sans-serif;
 }
 
 .navbar-default {
@@ -12,17 +12,17 @@ body {
 }
 
 .navbar-default .navbar-brand {
-  font-family: guardian-egyptt, georgia, serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
-  color: #d5641c;
+  color: #2f3542;
   font-size: 30px;
 }
 
 .navbar-default .navbar-nav > li > a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Lato, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: bold;
-  color: #3498db;
+  color: #d5641c;
 }
 
 .center {
@@ -53,7 +53,7 @@ body {
 .jumbotron {
   background-image: url('http://img0.etsystatic.com/site-assets/homepage-carousel/ravensctapothecary.jpg');
   h1, h2 {
-    font-family: guardian-egyptt, georgia, serif;
+    font-family: lato, guardian-egyptt, georgia, serif;
     color: #ffffff;
   }
 }
