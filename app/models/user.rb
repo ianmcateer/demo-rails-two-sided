@@ -11,9 +11,14 @@ class User < ApplicationRecord
   has_many :sales, class_name: "Order", foreign_key: "seller_id"
   has_many :purchases, class_name: "Order", foreign_key: "buyer_id"
 
-  after_create :add_a_role
+  after_create :add_a_role, :send_notification
 
   def add_a_role
     add_role :author
   end
+
+  def send_notification
+      UserNotifierMailer.send_notification(self).deliver_now
+  end
+
 end
