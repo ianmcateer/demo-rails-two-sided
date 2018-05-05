@@ -20,7 +20,6 @@ user = User.new
 user.email = 'jeffbeck@test.com'
 user.password = '1234567'
 user.name = 'jeff beck'
-user.add_role :admin
 user.id = 2
 user.save!
 
@@ -28,7 +27,6 @@ user = User.new
 user.email = 'annielennox@test.com'
 user.password = '1234567'
 user.name = 'annie lennox'
-user.add_role :admin
 user.id = 3
 user.save!
 
