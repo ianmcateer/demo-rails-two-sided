@@ -102,4 +102,10 @@ config.action_mailer.smtp_settings = {
   :password => "MY_PASSWORD"
 }
 
+
+config.action_mailer.delivery_method = :mailgun
+config.action_mailer.mailgun_settings = {
+		api_key: ENV['MAILGUN_API'],
+		domain: 'sandboxdcf03312a06a4821926f5d38f889133d.mailgun.org'
+}
 end
