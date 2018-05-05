@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+gem 'dotenv-rails', groups: [:development, :test]
 ruby '2.5.0'
 gem 'rails', '~> 5.2.0'
 gem 'pg'
@@ -14,7 +15,6 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
-gem 'dotenv-rails', groups: [:development, :test]
 gem 'carrierwave', '~> 1.2', '>= 1.2.2'
 gem 'cloudinary', '~> 1.9', '>= 1.9.1'
 gem 'devise'

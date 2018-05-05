@@ -14,7 +14,7 @@ development:
   <<: *default
   database: drum_development
   username: postgres
-  password: <%= ENV.fetch("POSTGRES_PASSWORD")  %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
   host: localhost
   port: 5432
 
@@ -22,4 +22,4 @@ production:
   <<: *default
   database: drum_development
   username: postgres
-  password: <%= ENV.fetch("POSTGRES_PASSWORD")  %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
