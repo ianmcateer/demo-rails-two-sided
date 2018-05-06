@@ -6,6 +6,7 @@ class Listing < ApplicationRecord
 
   belongs_to :user, class_name: 'User'
   has_many :orders, class_name: 'User'
+  belongs_to :category
 
   resourcify
 end

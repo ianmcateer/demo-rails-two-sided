@@ -30,6 +30,68 @@ user.name = 'annie lennox'
 user.id = 3
 user.save!
 
+category = Category.new
+category.name = "Electric Guitar"
+category.id = 1
+category.save!
+
+category = Category.new
+category.name = "Acoustic Guitar"
+category.id = 2
+category.save!
+
+category = Category.new
+category.name = "Bass Guitar"
+category.id = 3
+category.save!
+
+category = Category.new
+category.name = "Amps"
+category.id = 4
+category.save!
+
+category = Category.new
+category.name = "Effects and Pedals"
+category.id = 5
+category.save!
+
+
+category = Category.new
+category.name = "Drums and Percussion"
+category.id = 6
+category.save!
+
+
+category = Category.new
+category.name = "Pro Audio"
+category.id = 7
+category.save!
+
+category = Category.new
+category.name = "Keyboards and Synths"
+category.id = 8
+category.save!
+
+category = Category.new
+category.name = "Folk"
+category.id = 9
+category.save!
+
+category = Category.new
+category.name = "Band and Orchestra"
+category.id = 10
+category.save!
+
+category = Category.new
+category.name = "Software"
+category.id = 11
+category.save!
+
+category = Category.new
+category.name = "Accessories"
+category.id = 12
+category.save!
+
 
 listings = Listing.create([
   { name: "Fender American Standard Stratocaster Electric Guitar",
@@ -39,5 +101,6 @@ listings = Listing.create([
     price:1748,
     image: Rails.root.join('app', 'assets', 'images', 'fender.png').open,
     user_id: 2,
+    category_id: 1,
   }
   ])

@@ -21,7 +21,6 @@ gem 'devise'
 gem 'rails-erd', group: :development
 gem 'rolify'
 gem 'cancancan'
-gem 'rails_12factor', group: :production
 gem 'mailgun_rails'
 
 group :development, :test do

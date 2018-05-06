@@ -13,8 +13,17 @@ class ListingsController < ApplicationController
 
   # GET /listings
   # GET /listings.json
+  # check to see whether the category parameter was passed
+  # if blank then lisitngs variable will be filled with all lisitngs in database
+  # else if exists then first find matching caterogy id then fill lsitings variable with al listings that belong to that category
+
   def index
-    @listings = Listing.all.order("created_at DESC")
+    if params[:category].blank?
+      @listings = Listing.all.order("created_at DESC")
+    else
+      @category_id = Category.find_by(name: params[:category]).id
+      @listings = Listing.where(category_id: @category_id).order("created_at DESC")
+    end
   end
 
   # GET /listings/1
@@ -82,7 +91,7 @@ class ListingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def listing_params
-      params.require(:listing).permit(:name, :description, :price, :image)
+      params.require(:listing).permit(:name, :category_id, :description, :price, :image)
     end
 
     def check_user
