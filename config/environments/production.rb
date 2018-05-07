@@ -92,13 +92,11 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.delivery_method = :smtp
-config.action_mailer.smtp_settings = {
-  :authentication => :plain,
-  :address => "smtp.mailgun.org",
-  :port => 587,
-  :domain => "sandboxdcf03312a06a4821926f5d38f889133d.mailgun.org",
-  :user_name => "postmaster@sandboxdcf03312a06a4821926f5d38f889133d.mailgun.org",
-  :password =>  ENV['MAILGUN_PASSWORD']
-}
+  config.action_mailer.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {
+    api_key: ENV["MAILGUN_API"],
+    domain: ENV["MAILGUN_DOMAIN"],
+  }
+
+  config.action_mailer.default_url_options = { host: "drumtree.herokuapp.com"}
 end
