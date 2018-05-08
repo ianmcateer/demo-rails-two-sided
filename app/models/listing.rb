@@ -12,7 +12,7 @@ class Listing < ApplicationRecord
 
   def self.search(search)
     where('name ILIKE ?', "%#{search}%")
-    where('description LIKE ?', "%#{search}%")
+    where('description ILIKE ?', "%#{search}%")
   end
 
   # searchkick word_middle: %i[name description]
