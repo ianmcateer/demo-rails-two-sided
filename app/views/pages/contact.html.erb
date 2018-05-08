@@ -1,1 +1,16 @@
-<h1>Email us at drumtree@drumtree.com</h1>
+<h1>Help Centers</h1>
+<% @stores.each do |store| %>
+  <%= store.title %>
+  <%= store.full_address %>
+  <br>
+<p>
+  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAGZ2fhsbczb7F_aoBAsNTUdNm1dynGOaU &q=<%= store.full_address%>" allowfullscreen="allowfullscreen"></iframe>
+</p>
+
+<p>
+ <iframe src="https://www.google.com/maps/embed/v1/streetview?key=AIzaSyAGZ2fhsbczb7F_aoBAsNTUdNm1dynGOaU
+  &location=<%= store.latitude %> <%= store.longitude %>
+  &heading=210 &pitch=10 &fov=35 " width="600" height="450"></iframe>
+</p>
+
+<% end %>

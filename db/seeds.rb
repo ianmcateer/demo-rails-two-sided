@@ -104,3 +104,12 @@ listings = Listing.create([
     category_id: 1,
   }
   ])
+
+  mystore = Store.new
+  mystore.title = "Sydney Centre"
+  mystore.address = "131 York Street"
+  mystore.city = "Sydney"
+  mystore.state = "NSW"
+  mystore.postcode = "2000"
+  mystore.country = "Australia"
+  mystore.save!

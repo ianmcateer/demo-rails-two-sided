@@ -3,5 +3,6 @@ class PagesController < ApplicationController
   end
 
   def contact
+    @stores = Store.all
   end
 end
