@@ -1,7 +1,6 @@
 class Listing < ApplicationRecord
   mount_uploader :image, ImageUploader
 
-
   validates :name, :description, :price, presence: true
   validates :price, numericality: { greater_than: 0 }
 
@@ -11,14 +10,17 @@ class Listing < ApplicationRecord
 
   resourcify
 
-  searchkick word_middle: [:name, :description]
+  def self.search(search)
+    where('name ILIKE ?', "%#{search}%")
+    where('description LIKE ?', "%#{search}%")
+  end
+
+  # searchkick word_middle: %i[name description]
 
   def search_data
     {
       name: name,
-      description: description,
+      description: description
     }
-
   end
-
 end

@@ -4,10 +4,11 @@ class ListingsController < ApplicationController
   before_action :check_user, only: [:edit, :update, :destroy]
 
   def search
-    if params[:search].present?
-      @listings = Listing.search(params[:search])
+    @listings = Listing.all
+    if params[:search]
+      @listings = Listing.search(params[:search]).order("created_at DESC")
     else
-      @listings = Listing.all
+      @listings = Listing.all.order('created_at DESC')
     end
   end
 
