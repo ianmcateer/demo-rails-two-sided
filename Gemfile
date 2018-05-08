@@ -24,6 +24,7 @@ gem 'rolify'
 gem 'cancancan'
 gem 'mailgun_rails'
 gem 'stripe'
+gem 'searchkick'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

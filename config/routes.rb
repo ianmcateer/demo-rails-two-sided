@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   resources :categories
   devise_for :users
   resources :listings do
+    collection do
+      get 'search'
+    end
     resources :orders, only: %i[new create]
   end
 
