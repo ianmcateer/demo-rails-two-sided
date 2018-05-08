@@ -11,6 +11,14 @@ class Listing < ApplicationRecord
 
   resourcify
 
-  searchkick
+  searchkick word_middle: [:name, :description]
+
+  def search_data
+    {
+      name: name,
+      description: description,
+    }
+
+  end
 
 end
