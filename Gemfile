@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://code.stripe.com'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'dotenv-rails', groups: [:development, :test]
