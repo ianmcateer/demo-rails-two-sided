@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :categories
-  resources :orders
   devise_for :users
   resources :listings do
     resources :orders, only: %i[new create]
