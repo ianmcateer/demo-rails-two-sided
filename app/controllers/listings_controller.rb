@@ -57,6 +57,7 @@ class ListingsController < ApplicationController
     @listing = Listing.new(listing_params)
     @listing.user_id = current_user.id
 
+    UserNotifierMailer.send_listing_notification(@listing.user, @listing).deliver_now
 
 
     respond_to do |format|

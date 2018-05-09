@@ -13,21 +13,21 @@ user.email = 'admin@admin.com'
 user.password = '1234567'
 user.name = 'ian mcateer'
 user.add_role :admin
-user.id = 1
+user.id = 100
 user.save!
 
 user = User.new
 user.email = 'jeffbeck@test.com'
 user.password = '1234567'
 user.name = 'jeff beck'
-user.id = 2
+user.id = 200
 user.save!
 
 user = User.new
 user.email = 'annielennox@test.com'
 user.password = '1234567'
 user.name = 'annie lennox'
-user.id = 3
+user.id = 300
 user.save!
 
 category = Category.new
@@ -98,7 +98,7 @@ listings = Listing.create([
     description: "Consolidating my gear. I am the only owner... bought this is Japan when I lived there in 2002. Hardly used... kept in case... really a beautiful guitar.",
     price: 1098,
     image: Rails.root.join('app', 'assets', 'images', 'fender.png').open,
-    user_id: 2,
+    user_id: 200,
     category_id: 1,
   }
   ])
@@ -110,7 +110,7 @@ listings = Listing.create([
          Found Sound Australia Pty Ltd. 155 Elgin Street (Via Markov Place) Carlton, VIC 3053 Australia",
       price:1748,
       image: Rails.root.join('app', 'assets', 'images', 'electric_guitar_2.jpg').open,
-      user_id: 2,
+      user_id: 200,
       category_id: 1,
     }
     ])
@@ -121,7 +121,7 @@ listings = Listing.create([
       With a Baggs piezo pickup under the saddle (with hidden soundhole volume control), and a custom Cedar Creek case.  Note: there are two very small dings near the base of the guitar as shown in the photo.  Otherwise, the instrument is flawless.  ",
       price: 3748,
       image: Rails.root.join('app', 'assets', 'images', 'acoustic_guitar_1.jpg').open,
-      user_id: 2,
+      user_id: 200,
       category_id: 2,
     }
     ])
@@ -131,7 +131,7 @@ listings = Listing.create([
       description: "Absolutely pristine condition. Never saw my father play it in 35 years. Still has original plastic protective sticker on pick guard that is only peeling slightly (see picture). Shipping available. If you've been waiting for something special, this is it!  Make an offer.",
       price: 1500,
       image: Rails.root.join('app', 'assets', 'images', 'acoustic_guitar_2.jpg').open,
-      user_id: 2,
+      user_id: 200,
       category_id: 2,
     }
     ])
@@ -141,7 +141,7 @@ listings = Listing.create([
       description: "With two channels and four modes, the Blackstar HT Club 40 is the perfect tube amp for gigging in small clubs without breaking the bank. Choose between the clean channel, which has boutique and modern modes for tons of tonal variation, or the overdrive channel, to get fully EQ-able, defined overdrive. The OD channel boasts two more modes: classic crunch and super saturated lead. So many options may be overwhelming, but the HT Club 40 is an intuitive, streamlined combo amp that just makes sense for the gigging musician.",
       price: 900,
       image: Rails.root.join('app', 'assets', 'images', 'amp_1.jpg').open,
-      user_id: 2,
+      user_id: 200,
       category_id: 4,
       }
       ])
