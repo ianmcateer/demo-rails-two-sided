@@ -74,12 +74,12 @@ Contact Page
 
 ### Manage Listings Page
 
-![Screen Shot 2018-05-10 at 1.46.32 pm.png](/app/assets/images/manage-listings.jpeg)
+![Screen Shot 2018-05-10 at 1.46.32 pm.png](/app/assets/images/manage-listings.jpg)
 
 Sales History Page
 ------------------
 
-![Screen Shot 2018-05-10 at 1.55.07 pm.png](/app/assets/images/sales-history.jpeg)
+![Screen Shot 2018-05-10 at 1.55.07 pm.png](/app/assets/images/sales-history.jpg)
 
 
 
