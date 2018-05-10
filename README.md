@@ -62,11 +62,11 @@ Configuration - you will not have an ENV file as this has been ignored through G
 
 Index Page
 
-![Screen Shot 2018-05-10 at 11.13.43 am.png](resources/BC8BA51DB0AFD426FE9FC7B361EFF88F.png)
+![Screen Shot 2018-05-10 at 11.13.43 am.png](/app/assets/images/index.jpg)
 
 Show Page
 
-![Screen Shot 2018-05-10 at 11.18.22 am.png](resources/4CB30918AF8132CBBC950E693E4BDF41.png)
+![Screen Shot 2018-05-10 at 11.18.22 am.png](/app/assets/images/show.jpg)
 
 Contact Page
 
