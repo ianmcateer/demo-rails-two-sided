@@ -86,11 +86,11 @@ Sales History Page
 6\. WorkFlow Diagram
 --------------------
 
-![IMG\_1410.jpeg](resources/FADFB52BA5CD7D03864D34F6F55D6247.jpg)
+![IMG\_1410.jpeg](/app/assets/images/workflow-1.jpg)
 
-![IMG\_1411.jpeg](resources/8FD9BD7DA0F6C8B47A1D814020675A95.jpg)
+![IMG\_1411.jpeg](/app/assets/images/workflow-2.jpg)
 
-![IMG\_1412.jpeg](resources/38969B54073ADA1307B25C5013BF21FD.jpg)
+![IMG\_1412.jpeg](/app/assets/images/workflow-3.jpg)
 
 
 
