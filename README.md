@@ -97,7 +97,7 @@ Sales History Page
 7\. Entity Relationship Diagram
 -------------------------------
 
-![](resources/C52D11B64864A7F345411FFD2EE09025.jpg)
+![](/app/assets/images/erd.jpg)
 
 8\. List of Tools Used
 ----------------------
