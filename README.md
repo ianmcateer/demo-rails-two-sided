@@ -121,7 +121,7 @@ Sales History Page
 9\. Project Plan
 ----------------
 
-![](resources/BAAC91BB2F8F1DBAEA4C5A73BF6E4261.jpg)
+![](/app/assets/images/project-plan.jpg)
 
 10\. Bugs
 ---------
