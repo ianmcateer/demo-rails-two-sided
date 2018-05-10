@@ -19,13 +19,13 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
-    # @order = Order.new(order_params)
+    @order = Order.new(order_params)
     @listing = Listing.find(params[:listing_id])
-    # @seller = @listing.user
-    #
-    # @order.listing_id = @listing.id
-    # @order.buyer_id = current_user.id
-    # @order.seller_id = @seller.id
+    @seller = @listing.user
+
+    @order.listing_id = @listing.id
+    @order.buyer_id = current_user.id
+    @order.seller_id = @seller.id
 
     customer = Stripe::Customer.create(
       email: params[:stripeEmail],
