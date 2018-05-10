@@ -8,6 +8,8 @@ class Listing < ApplicationRecord
   has_many :orders, class_name: 'User'
   belongs_to :category
 
+  after_create :set_boolean
+
   resourcify
 
   def self.search(search)
@@ -22,5 +24,10 @@ class Listing < ApplicationRecord
       name: name,
       description: description
     }
+  end
+
+  def set_boolean
+    self.visible == true
+
   end
 end

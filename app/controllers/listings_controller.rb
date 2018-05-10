@@ -56,6 +56,7 @@ class ListingsController < ApplicationController
   def create
     @listing = Listing.new(listing_params)
     @listing.user_id = current_user.id
+    @listing.update_attribute(:visible, 'true')
 
     UserNotifierMailer.send_listing_notification(@listing.user, @listing).deliver_now
 
@@ -103,7 +104,7 @@ class ListingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def listing_params
-      params.require(:listing).permit(:name, :category_id, :description, :price, :image)
+      params.require(:listing).permit(:name, :category_id, :description, :price, :image, :visible)
     end
 
     def check_user

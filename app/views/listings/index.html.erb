@@ -7,6 +7,7 @@
 <div class="center">
   <div class="row">
     <% @listings.each do |listing| %>
+    <% if listing.visible == true %>
       <div class="col-md-3">
         <div class="thumbnail">
           <%= link_to image_tag(listing.image_url), listing %>
@@ -17,6 +18,7 @@
           </div>
         </div>
       </div>
+      <% end %>
     <% end %>
   </div>
 </div>

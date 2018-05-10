@@ -21,7 +21,10 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(order_params)
     @listing = Listing.find(params[:listing_id])
+    @listing.update_attribute(:visible, 'false')
+    @listing.save
     @seller = @listing.user
+
 
     @order.listing_id = @listing.id
     @order.buyer_id = current_user.id
