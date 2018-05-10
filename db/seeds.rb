@@ -83,3 +83,12 @@ category = Category.new
 category.name = "Accessories"
 category.id = 12
 category.save!
+
+mystore = Store.new
+ mystore.title = "Sydney Centre"
+ mystore.address = "131 York Street"
+ mystore.city = "Sydney"
+ mystore.state = "NSW"
+ mystore.postcode = "2000"
+ mystore.country = "Australia"
+ mystore.save!
