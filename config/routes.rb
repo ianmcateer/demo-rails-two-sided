@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     collection do
       get 'search'
     end
-    resources :orders, only: %i[new create]
+
   end
 
   get 'pages/about'
