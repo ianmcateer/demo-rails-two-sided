@@ -50,6 +50,11 @@ body {
   }
 }
 
+.btn-primary.outline {
+	border: 2px solid #0099cc;
+	color: #0099cc;
+}
+
 .jumbotron {
   background-image: url('http://img0.etsystatic.com/site-assets/homepage-carousel/ravensctapothecary.jpg');
   h1, h2 {
