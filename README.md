@@ -54,7 +54,8 @@ Configuration - you will not have an ENV file as this has been ignored through G
 4\. User Stories
 ----------------
 
-![Screen Shot 2018-05-10 at 3.23.34 pm.png](resources/BA9A11EC8DB572525848CDCFE0DF1031.png)
+![Screen Shot 2018-05-10 at 3.23.34 pm.png](/app/assets/images/trello.jpg)
+
 
 5\. WireFraming
 ---------------
