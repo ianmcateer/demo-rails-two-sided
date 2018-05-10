@@ -70,16 +70,16 @@ Show Page
 
 Contact Page
 
-![Screen Shot 2018-05-10 at 11.22.22 am.png](resources/4F119F681D2BB0DB6AEE4D9FECAE7E46.png)
+![Screen Shot 2018-05-10 at 11.22.22 am.png](resources/contact.jpg)
 
 ### Manage Listings Page
 
-![Screen Shot 2018-05-10 at 1.46.32 pm.png](resources/6199DA2CA194CD5904DD11D2B0003D07.png)
+![Screen Shot 2018-05-10 at 1.46.32 pm.png](resources/manage-listings.jpeg)
 
 Sales History Page
 ------------------
 
-![Screen Shot 2018-05-10 at 1.55.07 pm.png](resources/42804D6C7656F3C54EB87CA8D97A3C88.png)
+![Screen Shot 2018-05-10 at 1.55.07 pm.png](resources/sales-history.jpeg)
 
 
 
