@@ -54,15 +54,16 @@ class ListingsController < ApplicationController
   # POST /listings
   # POST /listings.json
   def create
-    @listing = Listing.new(listing_params)
+    @listing = Listing.create(listing_params)
     @listing.user_id = current_user.id
-    @listing.update_attribute(:visible, 'true')
-
-    UserNotifierMailer.send_listing_notification(@listing.user, @listing).deliver_now
-
+    @listing.visible = true
 
     respond_to do |format|
       if @listing.save
+#        @listing.update_attribute(:visible, 'true')
+
+        UserNotifierMailer.send_listing_notification(@listing.user, @listing).deliver_now
+
         format.html { redirect_to @listing, notice: 'Listing was successfully created.' }
         format.json { render action: 'show', status: :created, location: @listing }
       else
